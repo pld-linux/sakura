@@ -1,12 +1,12 @@
 Summary:	sakura is a terminal emulator based on GTK and VTE
 Summary(hu.UTF-8):	sakura egy GTK és VTE alapú terminál emulátor
 Name:		sakura
-Version:	2.3.7
+Version:	2.3.8
 Release:	0.1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://www.pleyades.net/david/projects/sakura/%{name}-%{version}.tar.bz2
-# Source0-md5:	cd2091979c0a50476593e954d1c46087
+# Source0-md5:	5ce4c9498ea5eb909dbd03617087202e
 URL:		http://www.pleyades.net/david/sakura.php
 BuildRequires:	cmake
 BuildRequires:	gtk+2-devel
