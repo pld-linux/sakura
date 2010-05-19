@@ -9,6 +9,7 @@ Source0:	http://www.pleyades.net/david/projects/sakura/%{name}-%{version}.tar.bz
 # Source0-md5:	5ce4c9498ea5eb909dbd03617087202e
 URL:		http://www.pleyades.net/david/sakura.php
 BuildRequires:	cmake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	perl-tools-pod
 BuildRequires:	pkgconfig
