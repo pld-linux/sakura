@@ -27,7 +27,10 @@ sakura egy GTK és VTE alapú terminál emulátor.
 %{__sed} -i 's@\(.*SET (CMAKE_C_FLAGS "\)-O2\(").\)*@\1%{rpmcflags}\2@' CMakeLists.txt
 
 %build
-cmake . -DCMAKE_INSTALL_PREFIX=%{_prefix}
+%cmake . \
+	-DCMAKE_INSTALL_PREFIX=%{_prefix} \
+	-DCMAKE_CXX_COMPILER_WORKS=1 \
+	-DCMAKE_CXX_COMPILER="%{__cc}"
 %{__make}
 
 %install
