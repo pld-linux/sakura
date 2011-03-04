@@ -9,6 +9,7 @@ Source0:	http://www.pleyades.net/david/projects/sakura/%{name}-%{version}.tar.bz
 # Source0-md5:	ebc9ac2d0559c11863ed957557e95fef
 URL:		http://www.pleyades.net/david/sakura.php
 BuildRequires:	cmake
+BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	perl-tools-pod
@@ -27,8 +28,7 @@ sakura egy GTK és VTE alapú terminál emulátor.
 %{__sed} -i 's@\(.*SET (CMAKE_C_FLAGS "\)-O2\(").\)*@\1%{rpmcflags}\2@' CMakeLists.txt
 
 %build
-%cmake . \
-	-DCMAKE_INSTALL_PREFIX=%{_prefix}
+%cmake .
 %{__make}
 
 %install
